@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
 
 export const metadata = {
-  title: 'Monad ecosystem',
+  title: 'Monad | Ecosystem',
   description: 'Monad - Extreme Parallelized Performance for EVM',
 }
 
