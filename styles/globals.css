@@ -64,3 +64,7 @@ i > svg {
   right: auto;
   overflow: visible;
 }
+
+.monad {
+  filter: drop-shadow(5px 0px 2px #200052) drop-shadow(5px 0px 0px rgb(131 110 249 / 30%)) drop-shadow(-5px 0px 5px rgb(131 110 249 / 70%));
+}
