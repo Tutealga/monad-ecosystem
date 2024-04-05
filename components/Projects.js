@@ -16,7 +16,7 @@ const Projects = ({project}) => {
          </div>
        </div>
        <div className="filter">
-         <img src={project.img} className="w-[50px] h-[50px] sm:w-[100px] clip sm:h-[100px]"/>
+         <img src={project.img} className="w-[65px] h-[65px] sm:w-[100px] clip sm:h-[100px]"/>
        </div>
      </div>
    </a>       

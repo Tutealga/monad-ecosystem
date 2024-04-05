@@ -9,7 +9,7 @@ export default function Home({ searchParams }) {
         <h1 className="sm:text-5xl font-bold z-20 text-center text-4xl">Explore the Monad ecosystem</h1>
         <Filters/>
         </div>
-        <section className="w-full grid grid-cols-2 sm:grid-cols-12 gap-16">
+        <section className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16">
           {
             searchParams.category
             ?
