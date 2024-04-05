@@ -4,7 +4,7 @@ const Projects = ({project}) => {
    <a href={project.website ? project.website : project.x} className="hover:scale-110 border-[#836EF9] border bg-[#836EF9] bg-opacity-30 rounded-[5px]">
      <div className="flex flex-row p-6 justify-between">
        <div className="flex flex-col justify-between">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col sm:gap-2">
         <h3 className="text-base font-bold">{project.name}</h3>
          <span className="text-sm">{project.subcategory}</span>
         </div>
