@@ -1,4 +1,4 @@
-import FilteredProducts from "@/components/FilteredProducts";
+import FilteredProjects from "@/components/FilteredProjects";
 import Filters from "@/components/Filters";
 
 export default function Home({ searchParams }) {
@@ -13,15 +13,15 @@ export default function Home({ searchParams }) {
           {
             searchParams.category
             ?
-            <FilteredProducts params={searchParams.category}/>
+            <FilteredProjects params={searchParams.category}/>
             :
             <>
-            <FilteredProducts params={"DeFi"}/>
-        <FilteredProducts params={"Bridge"}/>
-        <FilteredProducts params={"Wallet/Payments"}/>
-        <FilteredProducts params={"Gaming/NFT"}/>
-        <FilteredProducts params={"Oracle"}/>
-        <FilteredProducts params={"Others"}/>
+            <FilteredProjects params={"DeFi"}/>
+        <FilteredProjects params={"Bridge"}/>
+        <FilteredProjects params={"Wallet/Payments"}/>
+        <FilteredProjects params={"Gaming/NFT"}/>
+        <FilteredProjects params={"Oracle"}/>
+        <FilteredProjects params={"Others"}/>
             </>
           }
         </section>

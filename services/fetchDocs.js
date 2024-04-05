@@ -1,10 +1,10 @@
 import 'dotenv/config';
 
-export const getProducts = async ({params}) => {
+export const getProjects = async ({params}) => {
     const csv = await fetch(process.env.GOOGLE_SHEETS)
     .then((res) => res.text());
 
-    const products = csv
+    const projects = csv
     .split('\n')
     .slice(1)
     .map((row) => {
@@ -13,5 +13,5 @@ export const getProducts = async ({params}) => {
         return {update, category, name, native, website, x, discord, announced, categoria, subcategory, img}
     });
 
-    return products.filter(product => product.categoria === params)
+    return projects.filter(project => project.categoria === params)
 }

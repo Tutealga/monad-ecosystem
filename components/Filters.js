@@ -5,12 +5,13 @@ import { useSearchParams, useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 const links = [
-    {id: 1, name: 'DeFi', slug: 'DeFi'},
-    {id: 2, name: 'Bridge', slug: 'Bridge'},
-    {id: 3, name: 'Wallet/Payments', slug: 'Wallet/Payments'},
-{id: 4, name: 'Oracle', slug: 'Oracle'},
-{id: 5, name: 'Gaming/NFT', slug: 'Gaming/NFT'},
-{id: 6, name: 'Others', slug: 'Others'},
+    {id: 1, name: 'All', slug: ''},
+    {id: 2, name: 'DeFi', slug: 'DeFi'},
+    {id: 3, name: 'Bridge', slug: 'Bridge'},
+    {id: 4, name: 'Wallet/Payments', slug: 'Wallet/Payments'},
+{id: 5, name: 'Oracle', slug: 'Oracle'},
+{id: 6, name: 'Gaming/NFT', slug: 'Gaming/NFT'},
+{id: 7, name: 'Others', slug: 'Others'},
 ]
 
 const Filters = () => {
@@ -21,7 +22,7 @@ const Filters = () => {
     const handleFilter = (link) => {
 let newUrl = ''
 
-if(active === link) {
+if(active === link || link.id === 1) {
     setActive('');
 
     newUrl = filtersUrlQuery({
