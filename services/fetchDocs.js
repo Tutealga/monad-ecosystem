@@ -13,5 +13,9 @@ export const getProjects = async ({params}) => {
         return {update, category, name, native, website, x, discord, announced, categoria, subcategory, img}
     });
 
-    return projects.filter(project => project.categoria === params)
+    if(params) {
+        return projects.filter(project => project.categoria === params)
+    } else {
+        return projects
+    }
 }
