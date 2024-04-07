@@ -10,7 +10,7 @@ const FilteredProjects = async ({params}) => {
       <h3 className="sm:text-4xl font-bold text-3xl">{params}</h3>
       <span className="sm:text-2xl text-xl font-bold">{projects.length} dApps</span>
       </div>
-    <ul className="w-full gap-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
+    <ul className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[repeat(4,1fr)] gap-4">
     {
         projects.map(project => <Project key={project.name} project={project}/>)
     }
