@@ -58,7 +58,7 @@ router.push(newUrl, { scroll: false })
         <button 
         key={link.id}
         onClick={()=> handleFilter(link)}
-        className={`${link.id === 1 && !active ? 'active' : ''} whitespace-nowrap rounded-lg p-2 capitalize bg-[rgb(131_110_249/30%)] hover:bg-[#836ef9] hover:text-[#F7EDE8] ${active === link ? 'active' : ''}`}
+        className={`${link.id === 1 && !active ? 'active' : ''} whitespace-nowrap rounded-lg p-2 capitalize bg-[rgb(131_110_249/30%)] backdrop-blur-sm hover:bg-[#836ef9] hover:text-[#F7EDE8] ${active === link ? 'active' : ''}`}
         >
 {link.name}
         </button>
