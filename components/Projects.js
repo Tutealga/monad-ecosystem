@@ -1,7 +1,7 @@
 const Projects = ({project}) => {
 
   return (
-   <a href={project.website ? project.website : project.x} className="hover:scale-105 border-[#836EF9] border-opacity-30 duration-200 border bg-[#836EF9] bg-opacity-10 rounded-lg backdrop-blur-sm">
+   <a href={project.website ? project.website : project.x} className="hover:bg-opacity-20 hover:scale-105 border-[#836EF9] border-opacity-30 duration-200 border bg-[#836EF9] bg-opacity-10 rounded-lg backdrop-blur-sm">
      <div className="flex flex-col p-2 justify-between">
          <div className="grid grid-cols-2 items-center justify-between">
          {project.native === "TRUE" ? <span className="bg-[#836EF9] p-1 rounded-lg w-[42px] sm:w-[47px] text-xs sm:text-sm">Native</span> :  <span></span>}
