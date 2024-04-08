@@ -1,5 +1,6 @@
 import FilteredProjects from "@/components/FilteredProjects";
 import Filters from "@/components/Filters";
+import Footer from "@/components/Footer";
 
 export default async function Home({ searchParams }) {
  
@@ -9,7 +10,7 @@ export default async function Home({ searchParams }) {
         <h1 className="sm:text-5xl font-bold z-20 text-center text-4xl">Monad ecosystem</h1>
         <Filters/>
         </div>
-        <section className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16">
+        <section className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16 mb-16">
           {
             searchParams.category
             ?
@@ -25,6 +26,7 @@ export default async function Home({ searchParams }) {
             </>
           }
         </section>
+        <Footer/>
      </main>
     )
   }  
