@@ -3,7 +3,7 @@ import Filters from "@/components/Filters";
 import Footer from "@/components/Footer";
 
 export default async function Home({ searchParams }) {
- 
+
     return (
       <main className="flex mx-auto min-h-screen flex-col w-full max-w-[1200px]">
         <div className="flex flex-col mx-auto w-full mb-16 justify-center gap-8">
@@ -14,15 +14,16 @@ export default async function Home({ searchParams }) {
           {
             searchParams.category
             ?
-            <FilteredProjects params={searchParams.category}/>
+            <FilteredProjects native={searchParams.native} params={searchParams.category}/>
             :
             <>
-            <FilteredProjects params={"DeFi"}/>
-        <FilteredProjects params={"Bridge"}/>
-        <FilteredProjects params={"Wallet/Payments"}/>
-        <FilteredProjects params={"Gaming/NFT"}/>
-        <FilteredProjects params={"Oracle"}/>
-        <FilteredProjects params={"Others"}/>
+            <FilteredProjects native={searchParams.native} params={"DeFi"}/>
+        <FilteredProjects native={searchParams.native} params={"Bridge"}/>
+        <FilteredProjects native={searchParams.native} params={"Wallet/Payments"}/>
+        <FilteredProjects native={searchParams.native} params={"Marketplace/NFT"}/>
+        <FilteredProjects native={searchParams.native} params={"Infrastucture"}/>
+        <FilteredProjects native={searchParams.native} params={"Game"}/>
+        <FilteredProjects native={searchParams.native} params={"Other"}/>
             </>
           }
         </section>

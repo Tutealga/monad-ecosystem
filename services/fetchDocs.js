@@ -1,6 +1,6 @@
 import 'dotenv/config';
 
-export const getProjects = async ({params}) => {
+export const getProjects = async ({params, native}) => {
     const csv = await fetch(process.env.GOOGLE_SHEETS)
     .then((res) => res.text());
 
@@ -14,7 +14,10 @@ export const getProjects = async ({params}) => {
     });
 
     if(params) {
-        return projects.filter(project => project.categoria === params)
+        if(native === "true"){
+            return projects.filter(project => project.categoria === params && project.native === "TRUE" && project.name) 
+        }
+        return projects.filter(project => project.categoria === params && project.name)
     } else {
         return projects
     }
