@@ -21,7 +21,7 @@ export default async function Home({ searchParams }) {
         <FilteredProjects native={searchParams.native} params={"Bridge"}/>
         <FilteredProjects native={searchParams.native} params={"Wallet/Payments"}/>
         <FilteredProjects native={searchParams.native} params={"Marketplace/NFT"}/>
-        <FilteredProjects native={searchParams.native} params={"Infrastucture"}/>
+        <FilteredProjects native={searchParams.native} params={"Infrastructure"}/>
         <FilteredProjects native={searchParams.native} params={"Game"}/>
         <FilteredProjects native={searchParams.native} params={"Other"}/>
             </>
