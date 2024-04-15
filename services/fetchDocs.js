@@ -8,9 +8,9 @@ export const getProjects = async ({params}) => {
     .split('\n')
     .slice(1)
     .map((row) => {
-        const [update, category, name, native, website, x, discord, announced, categoria, subcategory, img] = row.split(',');
+        const [category, name, native, website, x, discord, categoria, subcategory, img] = row.split(',');
 
-        return {update, category, name, native, website, x, discord, announced, categoria, subcategory, img}
+        return {category, name, native, website, x, discord, categoria, subcategory, img}
     });
 
     if(params) {
