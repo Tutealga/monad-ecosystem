@@ -34,7 +34,7 @@ const Categories = () => {
             }
 
   return (
-    <ul className="flex w-full gap-2 flex-row justify-start items-center overflow-x-scroll md:overflow-x-hidden md:flex-wrap scroll-">
+    <ul className="flex w-full gap-2 flex-row justify-start items-center overflow-x-scroll md:overflow-x-hidden md:flex-wrap no-scrollbar">
     {categories.map(link => (
     <button 
     key={link.id}
