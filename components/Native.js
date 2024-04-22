@@ -37,7 +37,7 @@ const Native = () => {
         className={`${native ? 'active' : ''} flex flex-row items-center hover:bg-[#836ef9] rounded-lg py-2 px-3 bg-[rgb(131_110_249/30%)] gap-1 backdrop-blur-sm`}
         >
  <img src="https://assets-global.website-files.com/64c26cc84790d118b80c38c9/6529c7409cc925522834f61b_monad-logo-mark-white-rgb.svg" className="w-4 h-4"/>
- <span>Native</span>
+ <span className="text-sm sm:text-base">Native</span>
         </button>
   )
 }
