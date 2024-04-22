@@ -5,7 +5,7 @@ export default async function Home({ searchParams }) {
 
     return (
         <>
-        <div className="flex flex-col mx-auto w-full mb-16 gap-8">
+        <div className="flex flex-col mx-auto w-full mb-8 gap-8">
         <h1 className="sm:text-6xl font-bold z-20 text-left text-5xl">Ecosystem</h1>
         <Filters/>
         </div>

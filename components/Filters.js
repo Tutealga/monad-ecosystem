@@ -9,7 +9,7 @@ const Filters = () => {
   return (
     <div className="z-20 flex flex-col w-full max-w-full gap-6 items-start">
         <Categories/>
-    <div className="flex flex-row items-start sm:items-center gap-4">
+    <div className="flex flex-row items-start sm:items-center gap-2">
         <Search/>
         <Native/>
     </div>
