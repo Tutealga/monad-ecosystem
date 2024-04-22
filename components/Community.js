@@ -9,11 +9,9 @@ const Community = ({community}) => {
            </div>
            <div className="flex flex-col p-4 items-center gap-6">
            <div className="filter">
-           <img src={community.img} className="w-[65px] h-[65px] sm:w-[80px] clip sm:h-[80px]"/>
+           <img src={community.img} className="w-[65px] h-[65px] sm:w-[80px] sm:h-[80px]"/>
          </div>
-           <div className="flex flex-col items-center gap-6 justify-between">
            <h3 className="font-bold text-xl text-center">{community.country}</h3>
-           </div>
            </div>
         </div>
      </a>  
