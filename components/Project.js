@@ -1,4 +1,5 @@
 const Project = ({project}) => {
+  console.log(project)
 
   return (
    <a href={project.website ? project.website : project.x} target="__blank" className="hover:bg-opacity-20 hover:scale-105 border-[#836EF9] border-opacity-30 duration-200 border bg-[#836EF9] bg-opacity-10 rounded-lg backdrop-blur-sm">
